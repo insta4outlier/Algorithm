@@ -8,7 +8,7 @@ arr = [-1 for _ in range(N)]
 
 
 def find(x):
-    if arr[x] <= -1:
+    if arr[x] == -1:
         return x
     arr[x] = find(arr[x])
     return arr[x]
