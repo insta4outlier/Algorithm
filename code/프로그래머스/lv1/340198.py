@@ -1,5 +1,6 @@
 def solution(mats, park):
     answer = 0
+
     def check(sy, sx, k):
         if sy + k > len(park) or sx + k > len(park[0]):
             return False
